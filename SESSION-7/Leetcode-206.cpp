@@ -1,5 +1,5 @@
 //Leetcode 206 Solution
-
+/*
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
@@ -31,3 +31,4 @@ public:
         return slow;
     }
 };
+*/

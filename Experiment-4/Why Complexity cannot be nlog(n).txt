@@ -1,0 +1,20 @@
+A heap is a complete binary tree, so its height is always O(log n).
+
+When deleting an element at a given index in a heap, the following steps are performed:
+
+The element at the given index is replaced with the last element of the heap.
+This operation takes O(1) time.
+
+After replacement, the heap property may be violated. To restore it, heapifyUp and heapifyDown operations are applied.
+
+In heapifyUp, the element is compared only with its parent and moved upward along a single path.
+Since the height of the heap is O(log n), heapifyUp takes O(log n) time.
+
+In heapifyDown, the element is compared only with its children and moved downward along a single path.
+Again, the maximum number of levels is O(log n), so heapifyDown also takes O(log n) time.
+
+At no point are all n elements of the heap traversed. Only one root-to-leaf or leaf-to-root path is adjusted.
+
+Therefore, the total time complexity is:
+
+O(1) + O(log n) + O(log n) = O(log n)
